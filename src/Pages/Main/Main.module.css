@@ -1,0 +1,900 @@
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+/* HOME */
+
+.home {
+    width: 100%;
+    padding-left: 158px;
+    padding-right: 127px;
+    box-sizing: border-box;
+    display: flex;
+}
+.mobileContainer {
+    display: none;
+}
+.homeSide {
+    margin-right: 32px;
+}
+.titleContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.title p {
+    font-weight: 300;
+    margin-block-end: 0;
+    margin-block-start: 0;
+    font-size: 24px;
+    line-height: 154.19%;
+}
+.blackBlock {
+    margin-top: 66px;
+    padding: 44px;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    font-style: italic;
+}
+.blackBlock h1 {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 133.19%;
+    margin-block-end: 26px;
+    margin-block-start: 0;
+}
+.blackBlock p {
+    margin-block-end: 0;
+    margin-block-start: 0;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 133.19%;
+}
+.homeButt {
+    margin-top: 42px !important;
+    margin-left: 15px !important;
+    transform: scale(1.3) !important;
+}
+.time {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 155.69%;
+    padding-right: 95px;
+    box-sizing: border-box;
+    margin-top: 59px;
+}
+.time p {
+    margin-block-end: 15px;
+    margin-block-start: 0;
+}
+.speaker {
+    width: 80%;
+    height: 50%;
+}
+
+
+/* WHAT */
+
+.what {
+    width: 100%;
+    padding: 72px 0;
+    box-sizing: border-box;
+    background-color: #F8F8F8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 182px;
+}
+.what h2 {
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 155.69%;
+}
+.what ul li {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 155.69%;
+    padding-left: 10px;
+}
+.what ul li::marker {
+    content: url("../../Assets/triangle.svg");
+}
+.whatButt {
+    font-weight: bold !important;
+    margin-top: 42px !important;
+    transform: scale(1.3) !important;
+}
+
+
+/* SPEAKER */
+.speakerContainer {
+    padding-left: 158px;
+    padding-right: 127px;
+    padding-top: 68px;
+    padding-bottom: 139px;
+    display: flex;
+    margin: 0 auto;
+}
+.speakerContainer h2 {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 44px;
+    line-height: 154.19%;
+    margin-block-start: 55px;
+    margin-block-end: 16px;
+}
+.speakerContainer p {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 115.19%;
+    margin-block-end: 37px;
+    margin-block-start: 0;
+}
+.speakerBlackBlock {
+    background: black;
+    padding: 20px 82px;
+    box-sizing: border-box;
+    color: white;
+}
+.speakerBlackBlockMobile {
+    display: none;
+    background: black;
+    padding: 20px 82px;
+    box-sizing: border-box;
+    color: white;
+}
+.speakerContainer ul {
+    padding: 0;
+    margin-block-end: 0;
+    margin-block-start: 0;
+}
+.speakerContainer ul li {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 154.19%;
+}
+.speakerContainer ul li::marker {
+    content: "- ";
+} 
+.redLine {
+    width: 514px;
+    height: 4px;
+    background: #FC0D21;
+    margin: 0 auto;
+}
+
+/* WHY */
+
+.why {
+    max-width: 1440px;
+    width: 100%;
+    padding-top: 156px;
+    padding-left: 158px;
+    display: flex;
+    box-sizing: border-box;
+}
+.whySide {
+    width: 45%;
+    margin-right: 149px;
+}
+.whySide h2 {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 133.19%;
+    margin-block-end: 91px;
+    margin-block-start: 0;
+}
+.whySide p {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 154.19%;
+    margin-block-start: 0;
+    margin-block-end: 20px;
+}
+.why img {
+    margin-left: auto;
+}
+.orderBut {
+    transform: scale(1.4) !important;
+    margin-top: 102px !important;
+}
+.grayBlock {
+    display: none;
+}
+/* DATE AND TIME */
+
+.dateAndTime {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 150px;
+    padding-right: 150px;
+    box-sizing: border-box;
+    margin-top: 189px;
+}
+.dateAndTime p {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 64px;
+    background: black;
+    color: white;
+    width: max-content;
+    padding: 10px 12px;
+    margin-block-end: 0;
+    margin-block-start: 0;
+    margin-right: 16px;
+}
+.date {
+    display: flex;
+    align-items: center;
+}
+.clock {
+    display: flex;
+    align-items: center;
+}
+.clock span {
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 155.69%;
+    color: black;
+    margin-right: 16px;
+}
+
+/* IF */
+.if {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 139px;
+}
+.if h2 {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 133.19%;
+    font-style: italic;
+    margin-block-end: 60px;
+}
+.ifWrapper {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.ifBlock {
+    width: 288px;
+    display: flex;
+    flex-direction: column;
+}
+.ifBlock img {
+    width: 100%;
+}
+.ifBlock span {
+    height: 80px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 133.19%;
+}
+.ifButt {
+    transform: scale(1.3) !important;
+    margin-top: 88px !important;
+}
+
+/* COMMENTS */
+
+.comments {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 30px 60px;
+    box-sizing: border-box;
+    margin-bottom: 145px;
+    position: relative;
+}
+.commentsBack {
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    background: #FAFAFA;
+    box-shadow: -4px 4px 21px -3px rgba(0, 0, 0, 0.15);
+    top: 100px;
+    left: 0px;
+}
+
+@media screen and (max-width: 1380px) {
+    .home {
+        padding: 0px 60px;
+    }
+    .time {
+        margin-top: 10px;
+    }
+    .what {
+        margin-top: 80px;
+    }
+    .speakerContainer {
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-bottom: 80px;
+    }
+    .why {
+        padding-top: 88px;
+        padding-left: 60px;
+    }
+    .whySide {
+        margin-right: 60px;
+    }
+    .orderBut {
+        margin-top: 50px !important;
+    }
+    .dateAndTime {
+        margin-top: 100px;
+    }
+    .if {
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    .home {
+        flex-direction: column;
+        margin-top: 90px;
+        align-items: center;
+        padding-left: 137px;
+        padding-right: 137px;
+    }
+    .homeSide {
+        margin-right: 0;
+    }
+    .flag {
+        display: none;
+    }
+    .title {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .title p {
+        font-size: 42px;
+        line-height: 149.19%;
+    }
+    .speaker {
+        width: 60%;
+        margin-top: 45px;
+    }
+    .desktopContainer {
+        display: none;
+    }
+    .mobileContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .blackBlock {
+        text-align: center;
+    }
+    .blackBlock h1 {
+        font-size: 55px;
+        line-height: 133.19%;
+    }
+    .blackBlock p {
+        font-size: 32px;
+        line-height: 133.19%;
+    }
+    .homeButt {
+        transform: scale(2.5) !important;
+        margin-top: 150px !important;
+        padding: 5px 35px !important;
+        margin-left: 0 !important;
+    }
+    .time {
+        width: 100%;
+        padding: 0;
+        margin-top: 120px;
+        font-size: 96px;
+    }
+    .what h2 {
+        font-size: 36px;
+    }
+    .what ul li {
+        font-size: 30px;
+        line-height: 155.69%;
+    }
+    .whatButt {
+        transform: scale(2.5) !important;
+        margin-top: 120px !important;
+        padding: 5px 35px !important;
+        margin-bottom: 30px !important;
+    }
+    .speakerContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+        padding-left: 130px;
+        padding-right: 130px;
+    }
+    .speakerSide {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .speakerSide br {
+        display: none;
+    }
+    .speakerBlackBlock {
+        display: none;
+    }
+    .speakerSide h2 {
+        margin-block-end: 0;
+        margin: 0;
+        position: relative;
+        top: -3px;
+    }
+    .speakerSide p {
+        position: relative;
+        top: 5px;
+    }
+    .speakerContainer img {
+        margin-top: 50px;
+    }
+    .speakerBlackBlockMobile {
+        display: block;
+        margin-top: 50px;
+    }
+    .speakerBlackBlockMobile ul li {
+        font-size: 30px;
+        line-height: 154.19%;
+    }
+    .redLine {
+        margin-top: 60px;
+    }
+    .why {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    .why img {
+        margin-right: auto;
+        position: relative;
+        top: -30px;
+    }
+    .whySide {
+        width: 100%;
+        margin-right: 0;
+    }
+    .whySide h2 {
+        font-size: 42px;
+        line-height: 133.19%;
+    }
+    .whySide p {
+        font-size: 30px;
+        line-height: 154.19%;
+        text-align: left;
+    }
+    .orderBut {
+        transform: scale(2.5) !important;
+        margin-top: 40px !important;
+        padding: 5px 35px !important;
+    }
+    .dateAndTime {
+        margin-top: 140px;
+    }
+    .if h2 {
+        font-size: 42px;
+    }
+    .ifWrapper {
+        flex-direction: column;
+    }
+    .ifBlock {
+        width: 100%;
+    }
+    .ifBlock span {
+        align-self: flex-start;
+        font-size: 24px;
+        line-height: 133.19%;
+        width: 60%;
+    }
+    .ifBlock {
+        margin-bottom: 120px;
+        position: relative;
+    }
+    .ifBlock img {
+        align-self: flex-end;
+        width: 60%;
+        z-index: 2;
+    }
+    .ifBlockLeft span {
+        align-self: flex-end;
+        height: max-content;
+        margin-bottom: 23px;
+        text-align: right;
+        width: 80%;
+    }
+    .ifBlockLeft img {
+        align-self: flex-start;
+    }
+    .grayBlock {
+        display: inline;
+        position: absolute;
+        width: 50%;
+        height: 50%;
+        background-color: #C4C4C4;
+        top: 35%;
+        left: 15%;
+        z-index: 1;
+    }
+    .grayBlockLeft {
+        left: 40%;
+        top: 35%;
+    }
+    .ifButt {
+        transform: scale(2.5) !important;
+        margin-top: 40px !important;
+        padding: 5px 35px !important;
+    }
+    .comments {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 956px) {
+    .speakerContainer {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    .dateAndTime {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+
+@media screen and (max-width: 856px) {
+    .home {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    .what {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .speakerSide {
+        flex-direction: column;
+        text-align: center;
+    }
+    .grayBlock {
+        top: 40%;
+        left: 15%;
+    }
+    .grayBlockLeft {
+        left: 40%;
+        top: 40%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .blackBlock h1 {
+        font-size: 45px;
+    }
+    .time {
+        font-size: 70px;
+    }
+    .dateAndTime p {
+        font-size: 40px;
+    }
+    .if {
+        padding-left: 30px;
+        padding-right: 30px;
+        box-sizing: border-box;
+    }
+    .if h2 {
+        font-size: 36px;
+    }
+    .ifBlock span {
+        width: 85%;
+    }
+    .grayBlockLeft {
+        left: 40%;
+        top: 45%;
+        height: 45%;
+    }
+}
+
+@media screen and (max-width: 586px) {
+    .title p {
+        font-size: 36px;
+    }
+    .speaker {
+        width: 80%;
+    }
+    .blackBlock h1 {
+        font-size: 36px;
+    }
+    .blackBlock p {
+        font-size: 24px;
+    }
+    .homeButt {
+        width: 40% !important;
+    }
+    .time {
+        font-size: 50px;
+    }
+    .what h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+    .speakerBlackBlockMobile {
+        padding: 50px 40px;
+    }
+    .speakerContainer img {
+        width: 100%;
+    }
+    .whySide h2 {
+        margin-block-end: 50px;
+    }
+    .why img {
+        width: 100%;
+    }
+    .orderBut {
+        transform: scale(2) !important;
+    }
+    .dateAndTime {
+        padding-left: 30px;
+        padding-right: 15px;
+    }
+    .ifBlock span {
+        width: 100%;
+        margin-bottom: 27px;
+    }
+    .grayBlockLeft {
+        top: 50%;
+    }
+    .grayBlock {
+        top: 47%;
+    }
+    .if h2 {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .home {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .what h2 {
+        font-size: 24px;
+    }
+    .what ul li {
+        font-size: 20px;
+    }
+    .speakerContainer {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .speakerBlackBlockMobile ul li {
+        font-size: 20px;
+    }
+    .redLine {
+        width: 320px;
+    }
+    .why {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .whySide h2 {
+        font-size: 32px;
+    }
+    .whySide p {
+        font-size: 22px;
+    }
+    .why img {
+        top: -10px;
+    }
+    .dateAndTime {
+        margin-top: 90px;
+        flex-direction: column;
+    }
+    .if {
+        margin-top: 60px;
+    }
+    
+    .grayBlock {
+        height: 50%;
+        top: 48%;
+    }
+    .grayBlockLeft {
+        height: 40%;
+        top: 55%;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .title p {
+        font-size: 28px;
+    }
+    .speaker {
+        width: 70%;
+    }
+    .blackBlock h1 {
+        font-size: 28px;
+    }
+    .blackBlock p {
+        font-size: 18px;
+    }
+    .homeButt {
+        margin-top: 100px !important;
+    }
+    .time {
+        margin-top: 85px;
+    }
+    .orderBut {
+        transform: scale(1.7) !important;
+    }
+    .dateAndTime p {
+        font-size: 52px;
+    }
+    .if h2 {
+        text-align: center;
+    }
+    .ifBlock img {
+        width: 100%;
+    }
+    .ifBlock span {
+        text-align: center;
+        height: max-content;
+    }
+    .ifButt {
+        transform: scale(2) !important;
+        margin-top: 15px !important;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .what {
+        margin-top: 35px;
+    }
+    .what ul {
+        padding-left: 15px;
+    }
+    .whatButt {
+        transform: scale(2) !important;
+        margin-top: 65px !important;
+    }
+    .speakerContainer {
+        margin-top: 0;
+    }
+    .speakerContainer h2, .speakerContainer p {
+        font-size: 30px;
+    }
+    .redLine {
+        margin-top: 0;
+    }
+    .orderBut {
+        transform: scale(1.4) !important;
+    }
+    .dateAndTime p {
+        font-size: 36px;
+    }
+    .if h2 {
+        margin-block-start: 0;
+    }
+    .ifBlock {
+        margin-bottom: 65px;
+    }
+    .ifButt {
+        transform: scale(1.6) !important;
+    }
+    .ifWrapper {
+        width: 100%;
+    }
+    .ifBlock img {
+        width: 60%;
+    }
+    .grayBlock {
+        height: 35%;
+        top: 57%;
+    }
+    .grayBlockLeft {
+        top: 62%;
+        height: 30%;
+    }
+    .ifBlock span {
+        text-align: left;
+        font-size: 18px;
+    }
+    .ifBlockLeft span {
+        text-align: right;
+    }
+    .comments {
+        padding: 30px 5px;
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .home {
+        margin-top: 65px;
+    }
+    .blackBlock {
+        padding: 28px;
+    }
+    .homeButt {
+        transform: scale(2) !important;
+    }
+    .time {
+        font-size: 30px;
+    }
+    .whatButt {
+        transform: scale(1.8) !important;
+    }
+    .speakerContainer {
+        padding-top: 30px;
+    }
+    .speakerContainer img {
+        margin-top: 20px;
+    }
+    .speakerBlackBlockMobile ul li {
+        font-size: 18px;
+    }
+    .whySide h2 {
+        font-size: 26px;
+    }
+    .whySide p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .title p {
+        font-size: 22px;
+    }
+    .homeButt {
+        transform: scale(1.5) !important;
+        width: 60% !important;
+    }
+    .whatButt {
+        transform: scale(1.5) !important;
+        width: 70% !important;
+    }
+    .speakerBlackBlockMobile {
+        padding: 28px;
+    }
+    .speakerBlackBlockMobile ul li {
+        font-size: 16px;
+    }
+    .why {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .whySide p {
+        font-size: 16px;
+    }
+    .orderBut {
+        transform: scale(1.2) !important;
+    }
+    .dateAndTime p, .dateAndTime span {
+        font-size: 28px;
+    }
+    .date {
+        margin-bottom: 15px;
+    }
+    .ifBlock span {
+        font-size: 16px;
+    }
+    .ifButt {
+        transform: scale(1.3) !important;
+    }
+}

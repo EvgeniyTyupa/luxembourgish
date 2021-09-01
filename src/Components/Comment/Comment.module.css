@@ -1,0 +1,43 @@
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-left: 45px;
+    padding-right: 45px;
+    box-sizing: border-box;
+}
+.main img {
+    border-radius: 50%;
+    width: 171px;
+    height: 171px;
+    object-fit: cover;
+}
+.name {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 184.69%;
+    margin-block-end: 0px;
+    margin-block-start: 5px;
+}
+.main span {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 184.69%;
+}
+.text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 184.69%;
+    margin-block-end: 0px;
+    margin-block-start: 11px;
+}
+
+@media screen and (max-width: 350px) {
+    .main {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}

@@ -1,0 +1,177 @@
+.main {
+    width: 100%;
+    padding: 50px 127px 80px 153px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.side {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    gap: 20%
+}
+.dateContainer {
+    display: flex;
+    align-items: center;
+}
+.date {
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+}
+.logo {
+    width: 69px;
+}
+
+@media screen and (max-width: 1380px) {
+    .main {
+        padding: 50px 60px;
+    }
+}
+
+
+@media screen and (max-width: 1170px) {
+    .main {
+        padding: 50px 60px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .side {
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5%;
+    }
+    .logo {
+        width: 244px;
+    }
+    .learn {
+        font-size: 36px;
+        line-height: 42px;
+        position: relative;
+        top: 37px;
+    }
+    .date {
+        font-size: 24px;
+    }
+    .dateContainer {
+        position: relative;
+        top: 45px;
+    }
+    .dateContainer img {
+        width: 40px;
+    }
+    .orderBut {
+        transform: scale(1.8) !important;
+        padding: 5px 35px !important;
+        margin-top: 40px !important;
+    }
+}
+
+@media screen and (max-width: 856px) {
+    .logo {
+        width: 170px;
+    }
+    .learn {
+        top: 25px;
+        font-size: 26px;
+    }
+    .dateContainer {
+        top: 30px;
+    }
+    .dateContainer img {
+        width: 60px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .logo {
+        width: 88px;
+    }
+    .learn {
+        top: 0px;
+        font-size: 22px;
+    }
+    .dateContainer {
+        top: 5px;
+    }
+    .dateContainer img {
+        width: 50px;
+    }
+    .orderBut {
+        position: relative !important;
+        top: 42px !important;
+        
+    }
+    .main button {
+        width: 60% !important;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .main {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .learn {
+        font-size: 18px;
+    }
+    .dateContainer {
+        top: 10px;
+    }
+    .dateContainer img {
+        width: 35px;
+    }
+    .date {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .main {
+        padding: 30px 30px;
+    }
+    .learn {
+        line-height: 28px;
+    }
+    .logo {
+        width: 60px;
+    }
+    .dateContainer {
+        top: 5px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .learn {
+        line-height: 18px;
+        font-size: 12px;
+        top: 6px;
+    }
+    .dateContainer {
+        top: 15px;
+    }
+    .date span + span {
+        display: none;
+    }
+    .dateContainer img {
+        display: none;
+    }
+    .date {
+        font-size: 14px;
+    }
+    .orderBut {
+        top: 29px !important;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .orderBut {
+        transform: scale(1.5) !important;
+    }
+}

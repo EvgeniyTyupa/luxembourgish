@@ -1,0 +1,41 @@
+.main {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: rgba(128, 128, 128, .3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.window {
+    width: 40%;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 12px;
+    box-shadow: 0 0 26px -13px #fc0d21;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.field {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.field div {
+    width: 100%
+}
+.submit {
+    width: 100% !important;
+    
+}

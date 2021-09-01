@@ -1,0 +1,11 @@
+.main {
+    background: #FFEBEB !important;
+    border-radius: 44px !important;
+    text-transform: inherit !important;
+    padding: 5px 20px !important;
+}
+.main span {
+    font-weight: 900 !important;
+    font-size: 14px !important;
+    line-height: 184.69% !important;
+}

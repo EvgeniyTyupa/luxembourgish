@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.slick-prev:before {
+  content: url("./Assets/arrow_left.svg") !important
+}
+.slick-next:before {
+  content: url("./Assets/arrow_right.svg") !important
+}
+.slick-prev {
+  left: -19px !important;
+}
+
+.slick-prev, .slick-next {
+  width: 37px;
+  height: 50px;
+  background: transparent;
+  color: white;
+  top: 70% !important;
+}
+
+@media screen and (max-width: 468px) {
+  .slick-prev {
+    left: -22px !important;
+  }
+}

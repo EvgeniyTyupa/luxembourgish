@@ -1,0 +1,171 @@
+.main {
+    width: 100%;
+    display: flex;
+    height: 460px;
+    overflow: hidden;
+}
+.container {
+    display: flex;
+    width: 50%;
+}
+.logoBlock {
+    width: 320px;
+    background: #FC0D21;
+    display: flex;
+    justify-content: center;
+}
+.logoBlock img {
+    width: 80%;
+}
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 20%;
+}
+.section span {
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+}
+.section a {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    color: black;
+    text-decoration: none;
+}
+.section a:hover {
+    text-decoration: underline;
+}
+.social {
+    margin-left: 30%;
+    display: flex;
+    align-items: center;
+}
+.social a + a {
+    margin-left: 38px;
+}
+
+@media screen and (max-width: 1170px) {
+    .main {
+        flex-direction: column;
+        height: 100%;
+        padding-bottom: 140px;
+    }
+    .container {
+        width: 100%;
+    }
+    .social {
+        width: 100%;
+        margin-left: 0;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 130px;
+    }
+    .social a {
+        margin-right: 60px;
+        transform: scale(1.9);
+    }
+    .social a + a {
+        margin-left: 60px;
+        margin-right: 0;
+    }
+    .section {
+        margin-left: 28px;
+        justify-content: flex-end;
+    }
+    .section span {
+        font-size: 48px;
+        line-height: 56px;
+        margin-bottom: 45px;
+    }
+    .section a {
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 856px) {
+    .main {
+        padding-bottom: 100px;
+    }
+    .social a {
+        transform: scale(1.6);
+    }
+}
+
+@media screen and (max-width: 586px) {
+    .section span {
+        font-size: 34px;
+    }
+    .logoBlock {
+        width: 247px;
+    }
+    .logoBlock img {
+        width: 60%;
+    }
+    .section a {
+        font-size: 26px;
+    }
+    .social a {
+        transform: scale(1);
+    }
+    .social {
+        margin-top: 70px;
+    }
+    .main {
+        padding-bottom: 70px;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .logoBlock {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .section span {
+        font-size: 24px;
+        line-height: 48px;
+    }
+    .section a {
+        font-size: 22px;
+    }
+    .social a {
+        transform: scale(.8);
+    }
+    .social {
+        margin-top: 50px;
+    }
+    .main {
+        padding-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .section span {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .section a {
+        font-size: 18px;
+    }
+    .logoBlock {
+        width: 100px;
+    }
+    .social {
+        margin-top: 30px;
+    }
+    .social a {
+        margin-right: 30px;
+    }
+    .social a + a {
+        margin-left: 30px;
+        margin-right: 0;
+    }
+    .main {
+        padding-bottom: 30px;
+    }
+}

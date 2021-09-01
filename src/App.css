@@ -1,0 +1,24 @@
+body {
+  font-family: 'Roboto' !important;
+  margin: 0;
+  background-color: white;
+}
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+ 
+body::-webkit-scrollbar-track {
+  opacity: 0;
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: #FC0D21;
+  outline: 1px solid #FC0D21;
+}
