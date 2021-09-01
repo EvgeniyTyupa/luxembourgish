@@ -22,10 +22,12 @@ import ModalForm from '../../Components/ModalForm/ModalForm'
 import ThankyouModal from '../../Components/ThankyouModal/ThankyouModal'
 import { useHistory } from 'react-router-dom'
 import { connect } from 'react-redux'
+import { setIsRegistered } from '../../Redux/commonReducer'
 
 const Main = (props) => {
+    const { isRegistered, setIsRegistered } = props
+
     const [isOpenModal, setIsOpenModal] = useState(false)
-    const [isOpenThankyouModal, setIsOpenThankyouModal] = useState(false)
     const [url, setUrl] = useState("")
     
     const history = useHistory()
@@ -37,7 +39,7 @@ const Main = (props) => {
 
     useEffect(() => {
         if(window.location.pathname === "/thankyou"){
-            setIsOpenThankyouModal(true)
+            setIsRegistered(true)
         }
     }, [])
 
@@ -46,7 +48,7 @@ const Main = (props) => {
     }
 
     const handleThankyou = () => {
-        setIsOpenThankyouModal(!isOpenThankyouModal)
+        setIsRegistered(!isRegistered)
         history.push("/")
     }
 
@@ -56,7 +58,7 @@ const Main = (props) => {
             <Container>
                 <Navbar handleModal={handleModal}/>
                 {/* MODAL */}
-                {isOpenThankyouModal && <ThankyouModal handleThankyou={handleThankyou}/>}
+                {isRegistered && <ThankyouModal handleThankyou={handleThankyou}/>}
                 {isOpenModal && <ModalForm handleModal={handleModal} url={url}/>}
                 {/* HOME */}
                 <div className={classes.home}>
@@ -193,7 +195,10 @@ const Main = (props) => {
 }
 
 let mapStateToProps = (state) => ({
-    isFetching: state.common.isFetching
+    isFetching: state.common.isFetching,
+    isRegistered: state.common.isRegistered
 })
 
-export default connect(mapStateToProps, {})(Main)
+export default connect(mapStateToProps, {
+    setIsRegistered
+})(Main)
