@@ -173,7 +173,7 @@ const Main = (props) => {
                             <img src={if2} alt="luxemburg"/>
                         </div>
                         <div className={classes.ifBlock}>
-                            <span>Хотите получить гражданство и жить в стране с вашей второй половинкой</span>
+                            <span>Хотите обрести свой новый дом в самой благополучной стране Европы</span>
                             <div className={classes.grayBlock}/>
                             <img src={if3} alt="love"/>
                         </div>
