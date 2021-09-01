@@ -1,4 +1,4 @@
-import { googleApi } from "../Api/api";
+import { formApi } from "../Api/api";
 
 const SET_IS_FETCHING = 'SET_IS_FETCHING';
 const SET_IS_REGISTERED = 'SET_IS_REGISTERED';
@@ -31,7 +31,7 @@ export const setIsRegistered = (isRegistered) => ({
 export const register = (formData) => async (dispatch) => {
     dispatch(setIsFetching(true));
     try{
-        await googleApi.saveDataToGoogleSheet(formData);
+        await formApi.register(formData);
         dispatch([setIsRegistered(true), setIsFetching(false)]);
     }catch(err){
         dispatch(setIsFetching(false));

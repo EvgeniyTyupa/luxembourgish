@@ -14,12 +14,14 @@ import if2 from '../../Assets/if2.jpg'
 import if3 from '../../Assets/if3.jpg'
 import SliderComments from '../../Components/Comment/Slider/Slider'
 import Footer from '../../Components/Footer/Footer'
+import Preloader from '../../Components/Preloader/Preloader'
 
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import ModalForm from '../../Components/ModalForm/ModalForm'
 import ThankyouModal from '../../Components/ThankyouModal/ThankyouModal'
 import { useHistory } from 'react-router-dom'
+import { connect } from 'react-redux'
 
 const Main = (props) => {
     const [isOpenModal, setIsOpenModal] = useState(false)
@@ -50,6 +52,7 @@ const Main = (props) => {
 
     return(
         <div className={classes.main}>
+            {props.isFetching && <Preloader/>}
             <Container>
                 <Navbar handleModal={handleModal}/>
                 {/* MODAL */}
@@ -61,7 +64,7 @@ const Main = (props) => {
                         <div className={classes.titleContainer}>
                             <div className={classes.title}>
                                 <p>Открытый онлайн урок <br/>
-                                    <strong>с Викторией Лункес</strong>
+                                    <strong>с Викой Люнкес</strong>
                                 </p>
                             </div>
                             <img src={flag} alt="flag" className={classes.flag}/>
@@ -73,7 +76,7 @@ const Main = (props) => {
                             </div>
                             <Button text="Записаться" className={classes.homeButt} action={handleModal}/>
                             <div className={classes.time}>
-                                <p>15 | 09</p>
+                                <p>06 | 10</p>
                                 <p>19 : 00</p>
                             </div>
                         </div>  
@@ -86,7 +89,7 @@ const Main = (props) => {
                         </div>
                         <Button text="Записаться" className={classes.homeButt} action={handleModal}/>
                         <div className={classes.time}>
-                            <p>15 | 09</p>
+                            <p>06 | 10</p>
                             <p>19 : 00</p>
                         </div>
                     </div>  
@@ -109,13 +112,13 @@ const Main = (props) => {
                 <div className={classes.speakerContainer}>
                     <div className={classes.speakerSide} data-aos="fade-up" data-aos-duration="1500">
                         <h2>Преподаватель</h2>
-                        <p>Виктория <br/>Лункес</p>
+                        <p>Вика <br/>Люнкес</p>
                         <div className={classes.speakerBlackBlock}>
                             <ul>
-                                <li>11 лет опыта в языковом обучении</li>
+                                <li>5 лет опыта в языковом обучении</li>
                                 <li>10 000 часов проведенных уроков</li>
-                                <li>98% стунедтов легко справляются с экзаменом</li>
-                                <li>1000+ студентов сдавших экзамен и получивших гражданство Люксембурга</li>
+                                <li>98% студентов легко справляются с экзаменом</li>
+                                <li>200+ студентов сдавших экзамен и получивших гражданство Люксембурга</li>
                             </ul>
                         </div>
                     </div>
@@ -135,7 +138,7 @@ const Main = (props) => {
                 <div className={classes.whySide} data-aos="fade-up" data-aos-duration="1500">
                     <h2>Почему вам стоит посетить онлайн-урок?</h2>
                     <p>- вы познакомитесь с уникальной методологией изучения Люксембургского языка с целью получения гражданства</p>
-                    <p>- Викторияя Лункес лично разберёт ваши вопросы и поделится опытом подготовки к экзамену на реальных примерах</p>
+                    <p>- Вика Люнкес лично разберёт ваши вопросы и поделится опытом подготовки к экзамену на реальных примерах</p>
                     <p>- вы избавитесь от навязчивых мыслей и страхов перед экзаменом</p>
                 </div>
                 <img src={people} alt="people"/>
@@ -146,8 +149,8 @@ const Main = (props) => {
             <Container>
                 <div className={classes.dateAndTime} data-aos="fade" data-aos-duration="1500">
                     <div className={classes.date}>
-                        <p>15</p>
-                        <p>09</p>
+                        <p>06</p>
+                        <p>10</p>
                         <p>2021</p>
                     </div>
                     <div className={classes.clock}>
@@ -189,4 +192,8 @@ const Main = (props) => {
     )
 }
 
-export default Main
+let mapStateToProps = (state) => ({
+    isFetching: state.common.isFetching
+})
+
+export default connect(mapStateToProps, {})(Main)

@@ -1,20 +1,34 @@
 import * as axios from "axios";
 
-const baseURL = 'https://v1.nocodeapi.com/nadai/google_sheets/QTobHYbteUwfgQfQ?tabId=new_orders&api_key=GHCmpNtnTEhcSbDjA';
+const baseURL = 'https://secure.tutorcruncher.com/api/';
 
-export const googleApi = {
-    saveDataToGoogleSheet(formData){
+const instance = axios.create({
+    baseURL: baseURL
+});
+
+instance.interceptors.request.use(
+    config => {
+        config.headers.authorization = `token bbf2cdd80f298e844f6344548aa1ce7199781148`;
+        return config;
+    }
+);
+
+export const formApi = {
+    register(formData) {
         let name = formData.name;
         let phone = formData.phone;
         let email = formData.email;
-        let job = formData.job;
-        let why = formData.why;
-        let url = formData.url;
 
-        return axios.post(baseURL, JSON.stringify([[name, phone, email, job, why, url]]), {
-            headers: {
-                'Content-Type': 'application/json'
-            }
-        }).then(response => response.data);
+        const data = {
+            user: {
+                first_name: name,
+                last_name: "",
+                email: email,
+                phone: phone
+            },
+            send_emails: true
+        }
+
+        return instance.post('clients', data).then(response => response.data)
     }
 }

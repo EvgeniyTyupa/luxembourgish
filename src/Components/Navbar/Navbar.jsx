@@ -18,11 +18,11 @@ const Navbar = (props) => {
         <div className={classes.main} data-aos="fade-down">
             <div className={classes.side}>
                 <img src={logo_img} className={classes.logo} alt="logo"/>
-                <span className={classes.learn}>Learn easy <br/>luxembourgish</span>
+                <span className={classes.learn}>Learn easy <br/>Luxembourgish</span>
                 <div className={classes.dateContainer}>
                     <img src={calendar_icon} alt="calendar"/>
                     <div className={classes.date}>
-                        <span>15.09.2021</span>
+                        <span>06.10.2021</span>
                         <span>19:00:00</span>
                     </div>
                 </div>

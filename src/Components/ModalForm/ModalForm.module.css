@@ -37,5 +37,16 @@
 }
 .submit {
     width: 100% !important;
-    
+}
+
+@media screen and (max-width: 768px) {
+    .window {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .window {
+        width: 85%;
+    }
 }

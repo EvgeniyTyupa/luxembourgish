@@ -8,6 +8,7 @@ import { Controller, useForm } from 'react-hook-form';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { connect } from "react-redux";
+import { register } from "../../Redux/commonReducer";
 
 const useStyles = makeStyles((theme) => ({
     root:{
@@ -27,14 +28,14 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const ModalForm = (props) => {
-    const { handleModal, url } = props
+    const { handleModal, url, register } = props
 
     const material = useStyles();
     const { handleSubmit, control, reset, formState: { errors } } = useForm()
 
     const onSubmit = (data) => {
         data.url = url
-        console.log(data)
+        register(data)
         reset({
             name: "",
             phone: "",
@@ -142,4 +143,6 @@ let mapStateToProps = (state) => ({
     isFetching: state.common.isFetching
 })
 
-export default connect(mapStateToProps, {})(ModalForm)
+export default connect(mapStateToProps, {
+    register
+})(ModalForm)
