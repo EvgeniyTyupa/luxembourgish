@@ -35,6 +35,12 @@
     margin-block-start: 11px;
 }
 
+@media screen and (max-width: 468px) {
+    .text {
+        font-size: 14px;
+    }
+}
+
 @media screen and (max-width: 350px) {
     .main {
         padding-left: 15px;

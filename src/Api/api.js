@@ -1,17 +1,18 @@
 import * as axios from "axios";
 
-const baseURL = 'https://secure.tutorcruncher.com/api/';
+const baseURL = `https://${window.location.hostname}/server.php`;
+// const baseURL = `http://localhost:3001/server.php`;
 
 const instance = axios.create({
     baseURL: baseURL
 });
 
-instance.interceptors.request.use(
-    config => {
-        config.headers.authorization = `token bbf2cdd80f298e844f6344548aa1ce7199781148`;
-        return config;
-    }
-);
+// instance.interceptors.request.use(
+//     config => {
+//         config.headers.authorization = `token ${process.env.REACT_APP_API_TOKEN}`;
+//         return config;
+//     }
+// );
 
 export const formApi = {
     register(formData) {
@@ -22,13 +23,13 @@ export const formApi = {
         const data = {
             user: {
                 first_name: name,
-                last_name: "",
+                last_name: "test",
                 email: email,
                 phone: phone
             },
             send_emails: true
         }
 
-        return instance.post('clients', data).then(response => response.data)
+        return instance.post('', data).then(response => response.data)
     }
 }

@@ -1,42 +1,38 @@
 import comment1 from '../Assets/comment1.svg'
+import comment2 from '../Assets/comment1.jpg'
+import comment3 from '../Assets/comment3.jpg'
+import comment4 from '../Assets/comment4.jpg'
 
 export const useComments = () => {
     const comments = [
         { 
             id: "qwes",
             photo: comment1,
-            name: "Susanna",
+            name: "Aleksandra",
             role: "Блогер",
-            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin sapien ac tellus laoreet viverra. Vestibulum consequat, lorem sit amet eleifend malesuada, ipsum dui scelerisque quam, non luctus dui nulla ac justo. Donec quis elementum ipsum. Morbi ullamcorper nisl ac elit interdum, vitae tincidunt quam imperdiet. Nulla tincidunt placerat molestie. Morbi fermentum enim id urna venenatis, a volutpat eros vulputate. Ut magna neque, congue eget libero id, bibendum maximus mauris."
+            text: "Хочу поделиться своей радостью!!! Я успешно сдала Sproochentest💃  Всё благодаря замечательному преподавателю - Vika Bourdel-Lunkes. Мы учили с нуля (кроме Moien я ничего не знала🙈), в моём круге общения НЕТ людей, говорящих на люксембургском языке, немецкий я тоже не знаю. Каждое занятие для меня было как праздник 😍 Очень доходчивая подача информации и много практики! Вика умеет заинтересовать, активно прорабатывает ошибки. Если вдруг где-то что-то непонятно, то терпеливо объясняет всё столько раз, сколько потребуется. Я ни разу не почувствовала дискомфорта во время занятий, а я интроверт и человек с повышенной чувствительностью. Честно - учиться у неё в удовольствие☺️!!! Вика в курсе всех возможных экзаменационных тем, с ней можно ничего не бояться, будете готовы ко всему 💪🏻. Поэтому если кто-то ищет себе преподавателя для подготовки к экзамену по люксембургскому языку или же просто для изучения люксембургского языка, то от души рекомендую Вику ❤️ "
         },
         { 
             id: "qwefdgs",
-            photo: comment1,
-            name: "Susanna",
+            photo: comment2,
+            name: "Константин",
             role: "Блогер",
-            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin sapien ac tellus laoreet viverra. Vestibulum consequat, lorem sit amet eleifend malesuada, ipsum dui scelerisque quam, non luctus dui nulla ac justo. Donec quis elementum ipsum. Morbi ullamcorper nisl ac elit interdum, vitae tincidunt quam imperdiet. Nulla tincidunt placerat molestie. Morbi fermentum enim id urna venenatis, a volutpat eros vulputate. Ut magna neque, congue eget libero id, bibendum maximus mauris."
+            text: "Вика, хотел сказать огромное спасибо, как репетитору по люксембургскому языку. Благодаря тебе удалось выучить язык на достаточном уровне, чтобы сдать экзамен и заложить хорошую базу для дальнейшего изучения и общения на нём. И это ровно за 6 месяцев! Плюсы ты оказалась не только замечательным преподавателем, но и очень приятным человеком."
         },
         { 
             id: "qsdfwsewes",
-            photo: comment1,
-            name: "Susanna",
-            role: "Блогер",
-            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin sapien ac tellus laoreet viverra. Vestibulum consequat, lorem sit amet eleifend malesuada, ipsum dui scelerisque quam, non luctus dui nulla ac justo. Donec quis elementum ipsum. Morbi ullamcorper nisl ac elit interdum, vitae tincidunt quam imperdiet. Nulla tincidunt placerat molestie. Morbi fermentum enim id urna venenatis, a volutpat eros vulputate. Ut magna neque, congue eget libero id, bibendum maximus mauris."
+            photo: comment3,
+            name: "Pavel",
+            role: "Маркетолог",
+            text: "Вот и пройден ещё один важный этап моей жизни. Теперь я официально умею говорить по-люксембуржски на уровне A2 и понимаю на уровне B1. Спасибо Vika Bourdel-Lunkes !!! С тобой было почти не сложно и очень весело!"
         },
         { 
             id: "qwfdtew4es",
-            photo: comment1,
-            name: "Susanna",
-            role: "Блогер",
-            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin sapien ac tellus laoreet viverra. Vestibulum consequat, lorem sit amet eleifend malesuada, ipsum dui scelerisque quam, non luctus dui nulla ac justo. Donec quis elementum ipsum. Morbi ullamcorper nisl ac elit interdum, vitae tincidunt quam imperdiet. Nulla tincidunt placerat molestie. Morbi fermentum enim id urna venenatis, a volutpat eros vulputate. Ut magna neque, congue eget libero id, bibendum maximus mauris."
-        },
-        { 
-            id: "qwe5674r5ts",
-            photo: comment1,
-            name: "Susanna",
-            role: "Блогер",
-            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin sapien ac tellus laoreet viverra. Vestibulum consequat, lorem sit amet eleifend malesuada, ipsum dui scelerisque quam, non luctus dui nulla ac justo. Donec quis elementum ipsum. Morbi ullamcorper nisl ac elit interdum, vitae tincidunt quam imperdiet. Nulla tincidunt placerat molestie. Morbi fermentum enim id urna venenatis, a volutpat eros vulputate. Ut magna neque, congue eget libero id, bibendum maximus mauris."
-        },
+            photo: comment4,
+            name: "Julia",
+            role: "Дизайнер",
+            text: "Сегодня получили последнее заветное письмо с оценкой экзамена по Люксембургскому языку. Мы с мужем оба сдали экзамен благодаря Vika Bourdel-Lunkes. Муж занимался 2,5 месяца и сдал на 85 баллов разговор. Тем кто ещё не сдал тест, надо торопиться сдать, пока по какой-нибудь петиции не ввели экзамен для всех трёх государственных языков! "
+        }
     ]
 
     return comments
