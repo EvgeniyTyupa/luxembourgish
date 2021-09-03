@@ -25,7 +25,7 @@ import { connect } from 'react-redux'
 import { setIsRegistered } from '../../Redux/commonReducer'
 
 const Main = (props) => {
-    const { isRegistered, setIsRegistered } = props
+    const { isRegistered, setIsRegistered, isFetching } = props
 
     const [isOpenModal, setIsOpenModal] = useState(false)
     const [url, setUrl] = useState("")
@@ -43,6 +43,13 @@ const Main = (props) => {
         }
     }, [])
 
+    useEffect(() => {
+        if(isRegistered){
+            setIsOpenModal(false)
+            history.push('/thankyou')
+        }
+    }, [isRegistered])
+
     const handleModal = () => {
         setIsOpenModal(!isOpenModal)
     }
@@ -54,7 +61,7 @@ const Main = (props) => {
 
     return(
         <div className={classes.main}>
-            {props.isFetching && <Preloader/>}
+            {isFetching && <Preloader/>}
             <Container>
                 <Navbar handleModal={handleModal}/>
                 {/* MODAL */}

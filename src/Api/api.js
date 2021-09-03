@@ -1,7 +1,8 @@
 import * as axios from "axios";
 
-const baseURL = `https://${window.location.hostname}/server.php`;
+// const baseURL = `https://${window.location.hostname}/server.php`;
 // const baseURL = `http://localhost:3001/server.php`;
+const baseURL = 'https://v1.nocodeapi.com/nadai/google_sheets/kQuHlFXmviaDWSmr?tabId=sheet1&api_key=GHCmpNtnTEhcSbDjA';
 
 const instance = axios.create({
     baseURL: baseURL
@@ -16,20 +17,22 @@ const instance = axios.create({
 
 export const formApi = {
     register(formData) {
-        let name = formData.name;
-        let phone = formData.phone;
-        let email = formData.email;
+        const { name, phone, email, url } = formData
 
-        const data = {
-            user: {
-                first_name: name,
-                last_name: "test",
-                email: email,
-                phone: phone
-            },
-            send_emails: true
-        }
+        // const data = {
+        //     user: {
+        //         first_name: name,
+        //         last_name: "test",
+        //         email: email,
+        //         phone: phone
+        //     },
+        //     send_emails: true
+        // }
 
-        return instance.post('', data).then(response => response.data)
+        return axios.post(baseURL, JSON.stringify([[name, phone, email, url]]), {
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        }).then(response => response.data);
     }
 }
