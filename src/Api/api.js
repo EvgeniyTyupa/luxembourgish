@@ -29,13 +29,13 @@ export const formApi = {
             send_emails: true
         }
 
-        return instance.post('', data).then(response => 
-            axios.post(tableURL, JSON.stringify([[name, phone, email, url]]), {
-                headers: {
-                    'Content-Type': 'application/json'
-                }
-            }).then(response => response.data)
-        )
-
+        // return instance.post('', data).then(response => 
+            
+        //     }).then(response => response.data)
+        // )
+        return axios.post(tableURL, JSON.stringify([[name, phone, email, url]]), {
+            headers: {
+                'Content-Type': 'application/json'
+        }})
     }
 }
