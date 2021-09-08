@@ -37,7 +37,8 @@ const ModalForm = (props) => {
         data.url = url
         register(data)
         reset({
-            name: "",
+            first_name: "",
+            last_name: "",
             phone: "",
             email: ""
         })
@@ -58,7 +59,7 @@ const ModalForm = (props) => {
                 <form onSubmit={handleSubmit(data => onSubmit(data))}>
                     <div className={classes.field}>
                         <Controller
-                            name="name"
+                            name="first_name"
                             control={control}
                             defaultValue=""
                             rules={{
@@ -73,6 +74,30 @@ const ModalForm = (props) => {
                                     helperText={error ? error.message : null}
                                     classes={material}
                                     label="Имя"
+                                    variant="outlined"
+                                    onChange={onChange}
+                                    value={value}
+                                />
+                            )}
+                        />
+                    </div>
+                    <div className={classes.field}>
+                        <Controller
+                            name="last_name"
+                            control={control}
+                            defaultValue=""
+                            rules={{
+                                required: {
+                                    value: true,
+                                    message: "Обязательное поле!"
+                                }
+                            }}
+                            render={({ field: { onChange, value }, fieldState: { error } }) => (
+                                <TextField
+                                    error={!!error}
+                                    helperText={error ? error.message : null}
+                                    classes={material}
+                                    label="Фамилия"
                                     variant="outlined"
                                     onChange={onChange}
                                     value={value}
@@ -114,11 +139,12 @@ const ModalForm = (props) => {
                             control={control}
                             defaultValue=""
                             rules={{
-                                required: {
-                                    value: true,
-                                    message: "Обязательное поле!"
+                                required: "Обязательное поле!",
+                                pattern: {
+                                    value:  /^[0-9+]\d{9,13}$/,
+                                    message: "Неправильный номер телефона!"
                                 }
-                            }}
+                            }} 
                             render={({ field: { onChange, value }, fieldState: { error } }) => (
                                 <TextField 
                                     error={!!error} 

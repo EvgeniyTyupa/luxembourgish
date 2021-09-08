@@ -17,12 +17,12 @@ instance.interceptors.request.use(
 
 export const formApi = {
     register(formData) {
-        const { name, phone, email, url } = formData
+        const { first_name, last_name, phone, email, url } = formData
 
         const data = {
             user: {
-                first_name: name,
-                last_name: "test",
+                first_name: first_name,
+                last_name: last_name,
                 email: email,
                 phone: phone
             },
@@ -33,7 +33,7 @@ export const formApi = {
             
         //     }).then(response => response.data)
         // )
-        return axios.post(tableURL, JSON.stringify([[name, phone, email, url]]), {
+        return axios.post(tableURL, JSON.stringify([[first_name, last_name, phone, email, url]]), {
             headers: {
                 'Content-Type': 'application/json'
         }})
