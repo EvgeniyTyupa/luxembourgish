@@ -35,6 +35,9 @@
 .field div {
     width: 100%
 }
+.field div div {
+    width: auto;
+}
 .submit {
     width: 100% !important;
 }
