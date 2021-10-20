@@ -72,7 +72,7 @@ const Main = (props) => {
                     <div className={classes.homeSide} data-aos="fade-right" data-aos-duration="2000" data-aos-delay="500">
                         <div className={classes.titleContainer}>
                             <div className={classes.title}>
-                                <p>Открытый онлайн урок <br/>
+                                <p>Групповой курс по подготовке к Sproochentest уровень А2<br/>
                                     <strong>с Викой Люнкес</strong>
                                 </p>
                             </div>
@@ -80,13 +80,13 @@ const Main = (props) => {
                         </div>
                         <div className={classes.desktopContainer}>
                             <div className={classes.blackBlock}>
-                                <h1>Как подготовиться к языковому экзамену Sproochentest</h1>
-                                <p>и успешно сдать языковой экзамен для получения гражданства Люксембурга</p>
+                                <h1>Как систематизировать свои знания</h1>
+                                <p>и успешно пройти экзамен на гражданство</p>
                             </div>
                             <Button text="Записаться" className={classes.homeButt} action={handleModal}/>
                             <div className={classes.time}>
-                                <p>06 | 10</p>
-                                <p>19 : 00</p>
+                                <p>13 | 11</p>
+                                <p>09 : 30</p>
                             </div>
                         </div>  
                     </div>
@@ -106,13 +106,13 @@ const Main = (props) => {
             </Container>
             {/* WHAT */}
             <div className={classes.what} data-aos="fade-up" data-aos-duration="1500">
-                <h2>Что вы узнаете на открытом уроке:</h2>
+                <h2>Чему вы научитесь на моем курсе:</h2>
                 <ul>
-                    <li>из каких этапов состоит экзамен Sproochentest </li>
-                    <li> какие знания необходимы, чтобы успешно сдать тест</li>
-                    {/* <li>как психологически подготовиться к тесту</li> */}
-                    <li>проверенная методология изучения Люксемубгского языка</li>
-                    <li>подводные камни при подготовке и сдаче теста</li>
+                    <li>чувствовать себя уверенно для сдачи Sproochentest</li>
+                    <li>описывать картинки любой сложности</li>
+                    <li>вести грамотный диалог</li>
+                    <li>расширите словарный запас</li>
+                    <li>получите полный список вопросов по экзаменационным темам</li>
                 </ul>
                 <Button text="Принять участие"  className={classes.whatButt} action={handleModal}/>
             </div>
@@ -147,8 +147,8 @@ const Main = (props) => {
                 <div className={classes.whySide} data-aos="fade-up" data-aos-duration="1500">
                     <h2>Почему вам стоит посетить онлайн-урок?</h2>
                     <p>- вы познакомитесь с уникальной методологией изучения Люксембургского языка с целью получения гражданства</p>
-                    <p>- Вика Люнкес лично разберёт ваши вопросы и поделится опытом подготовки к экзамену на реальных примерах</p>
-                    <p>- вы избавитесь от навязчивых мыслей и страхов перед экзаменом</p>
+                    <p>- Научитесь свободно говорить на разные темы и описывать экзаменационные картинки</p>
+                    <p>- уже весной 2022 сможете сдать экзамен на гражданство</p>
                 </div>
                 <img src={people} alt="people"/>
             </div>
@@ -158,14 +158,14 @@ const Main = (props) => {
             <Container>
                 <div className={classes.dateAndTime} data-aos="fade" data-aos-duration="1500">
                     <div className={classes.date}>
-                        <p>06</p>
-                        <p>10</p>
+                        <p>13</p>
+                        <p>11</p>
                         <p>2021</p>
                     </div>
                     <div className={classes.clock}>
-                        <p>19</p>
+                        <p>09</p>
                         <span>:</span>
-                        <p>00</p>
+                        <p>30</p>
                     </div>
                 </div>
                 <div className={classes.if}>

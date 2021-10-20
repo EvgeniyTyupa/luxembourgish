@@ -22,8 +22,8 @@ const Navbar = (props) => {
                 <div className={classes.dateContainer}>
                     <img src={calendar_icon} alt="calendar"/>
                     <div className={classes.date}>
-                        <span>06.10.2021</span>
-                        <span>19:00:00</span>
+                        <span>13.11.2021</span>
+                        <span>09:30:00</span>
                     </div>
                 </div>
             </div>
