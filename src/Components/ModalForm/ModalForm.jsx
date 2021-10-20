@@ -181,7 +181,7 @@ const ModalForm = (props) => {
                             rules={{
                                 required: "Обязательное поле!",
                                 pattern: {
-                                    value:  /^.{18,20}$/,
+                                    value:  /^.{16,20}$/,
                                     message: "Неправильный номер телефона!"
                                 }
                             }} 
