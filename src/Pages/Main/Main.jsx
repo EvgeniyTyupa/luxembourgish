@@ -93,13 +93,13 @@ const Main = (props) => {
                     <img src={speaker1} alt="speaker" className={classes.speaker} data-aos="fade-left" data-aos-duration="2500" data-aos-delay="1000"/>
                     <div className={classes.mobileContainer}>
                         <div className={classes.blackBlock}>
-                            <h1>Как подготовиться к языковому экзамену Sproochentest</h1>
-                            <p>и успешно сдать языковой экзамен для получения гражданства Люксембурга</p>
+                            <h1>Как систематизировать свои знания</h1>
+                            <p>и успешно пройти экзамен на гражданство</p>
                         </div>
                         <Button text="Записаться" className={classes.homeButt} action={handleModal}/>
                         <div className={classes.time}>
-                            <p>06 | 10</p>
-                            <p>19 : 00</p>
+                            <p>13 | 11</p>
+                            <p>09 : 30</p>
                         </div>
                     </div>  
                 </div>
@@ -169,7 +169,7 @@ const Main = (props) => {
                     </div>
                 </div>
                 <div className={classes.if}>
-                    <h2>Открытый урок для вас, если вы:</h2>
+                    <h2>Групповой курс уровень А2 для вас, если вы:</h2>
                     <div className={classes.ifWrapper} data-aos="fade-up" data-aos-duration="1500">
                         <div className={classes.ifBlock}>
                             <span>Давно задумываетесь о получении гражданства Люксембурга</span>
