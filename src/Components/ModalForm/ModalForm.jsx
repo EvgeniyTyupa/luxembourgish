@@ -187,7 +187,7 @@ const ModalForm = (props) => {
                             }} 
                             render={({ field: { onChange, value }, fieldState: { error } }) => (
                                 <MuiPhoneNumber 
-                                    defaultCountry={'ua'} 
+                                    defaultCountry={'lu'} 
                                     error={!!error} 
                                     helperText={error ? error.message : null}
                                     classes={material} 
