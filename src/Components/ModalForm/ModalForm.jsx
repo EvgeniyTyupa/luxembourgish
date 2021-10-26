@@ -72,6 +72,8 @@ const ModalForm = (props) => {
         data.first_name = transliteration(first_name)
         data.last_name = transliteration(last_name)
         data.email = data.email.toLowerCase()
+        data.phone = data.phone.replace('+', '')
+        data.phone = data.phone.replace(/\s/g, '')
 
         // console.log(data)
         register(data)
